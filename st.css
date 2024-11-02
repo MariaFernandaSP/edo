@@ -38,7 +38,7 @@ body {
     margin-top: 17px;
     padding: 1.5vw 1.5vw; /* Ajusta el padding para que el recuadro sea más pequeño */
     margin-left: 2vw; /* Deja un espacio libre a la izquierda */
-    width: fit-content; /* El recuadro se ajusta al contenido */
+     width: 80%; /* El recuadro se ajusta al contenido */
     font-size: 1.1em;
     text-align: left;
     
@@ -60,9 +60,7 @@ body {
     z-index: 0; /* Coloca debajo del `div` superior */
     text-align: center; /* Centra el texto en pantallas pequeñas */
 }
-.fondoimagen h1{
-  font-zise: 4rem;
-}
+
 
 /* Estilo del icono de menú */
 .menu-icon {
