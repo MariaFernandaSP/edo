@@ -60,6 +60,9 @@ body {
     z-index: 0; /* Coloca debajo del `div` superior */
     text-align: center; /* Centra el texto en pantallas pequeñas */
 }
+.fondoimagen h1{
+  font-zise: 4rem;
+}
 
 /* Estilo del icono de menú */
 .menu-icon {
