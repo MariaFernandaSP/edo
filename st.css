@@ -622,3 +622,7 @@ input {
 .tera{
     font-size: 15px;
 }
+
+.biblio{
+    word-break: break-all;
+}
