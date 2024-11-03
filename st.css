@@ -64,7 +64,8 @@ body {
 
 .imgresp img{
     height: auto;
-    width: 100%;
+    width: 35%;
+    min-width: 16rem;  
 }
 
 /* Estilo del icono de menú */
