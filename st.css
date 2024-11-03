@@ -61,12 +61,11 @@ body {
     z-index: 0; /* Coloca debajo del `div` superior */
     text-align: center; /* Centra el texto en pantallas pequeñas */
 }
+
 .imgresp img{
     height: auto;
-    width: auto;
+    width: 100%;
 }
-
-
 
 /* Estilo del icono de menú */
 .menu-icon {
