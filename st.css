@@ -425,11 +425,13 @@ input {
 /* Change background color of buttons on hover */
 .tabdet button:hover {
   background-color: #640eb4;
+  color: #ffffff;
 }
 
 /* Create an active/current "tab button" class */
 .tabdet button.active {
   background-color: #44077e;
+  color: #ffffff;
 }
 
 /* Style the tab content */
@@ -470,11 +472,13 @@ input {
 /* Change background color of buttons on hover */
 .tabsas button:hover {
   background-color: #640eb4;
+  color: #ffffff;
 }
 
 /* Create an active/current "tab button" class */
 .tabsas button.active {
   background-color: #44077e;
+  color: #ffffff;
 }
 
 /* Style the tab content */
