@@ -627,3 +627,6 @@ input {
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
+.biblio li{
+    margin-bottom: 1rem;
+}
