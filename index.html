@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Document HTML5 -->
+    <!-- Configuración de diseño responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APLICACIÓN | EDO</title>
+    <link rel="icon" href="images/lapiz.ico" type="image/x-icon">
+    
+    <!-- Enlace a CSS -->
+    <link rel="stylesheet" href="st.css">
+    
+    <!-- Enlace a JavaScript para el botón de cambio de modo -->
+    <script src="function.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+</head>
+<body>
+    <!-- Portada -->
+    <div class="portada">
+        <!-- Botón modo color -->
+        <input type="checkbox" id="toggle" onchange="cambiarColor()">
+        <label for="toggle"></label> <!-- Etiqueta para el checkbox -->
+        <button class="toggle-menu" onclick="toggleMenu()">
+          <img src="images/menicon.png" width="40px">
+        </button>
+    </div>
+
+    <!-- Menú de navegación vertical -->
+    <div class="menu-vertical" id="menu">
+      <div class="icon">
+        <img src="images/intro.png" class="btn-image7" onclick="location.href='#part1'">
+        <div class="tooltip">INTRODUCCIÓN</div>
+        <div class="circle"></div>
+    </div>
+    <div class="icon">
+        <img src="images/marco.png" class="btn-image7" onclick="location.href='#part2'">
+        <div class="tooltip">MARCO TEÓRICO</div>
+        <div class="circle"></div>
+    </div>
+    <div class="icon">
+        <img src="images/problem.png" class="btn-image7" onclick="location.href='#part3'">
+        <div class="tooltip">PROBLEMÁTICA</div>
+        <div class="circle"></div>
+    </div>
+    <div class="icon">
+        <img src="images/resul.png" class="btn-image7" onclick="location.href='#part4'">
+        <div class="tooltip">RESULTADOS</div>
+        <div class="circle"></div>
+    </div>
+    <div class="icon">
+        <img src="images/conclu.png" class="btn-image7" onclick="location.href='#part5'">
+        <div class="tooltip">CONCLUSIÓN</div>
+        <div class="circle"></div>
+    </div>
+    <div class="icon">
+        <img src="images/ref.png" class="btn-image7" onclick="location.href='#part6'">
+        <div class="tooltip">BIBLIOGRAFÍA</div>
+        <div class="circle"></div>
+    </div>
+</div>
+    <!-- Portada -->
+    <div class="fondoimagen">
+        <div class="texto">
+            <p>UNIDAD 2:</p>
+            <h2>APLICACIONES DE <br>
+              ECUACIONES DIFERENCIALES <br>
+              DE SEGUNDO ORDEN</h2>
+            <p>
+                CARRERA: <br>
+                Tecnologías de la Información y Comunicaciones
+            </p>
+            <p>AUTORIA: <br>
+                Jennifer Vázquez <br>
+                Maria Fernanda Sánchez Pérez<br>
+                Julio César Molina Sánchez
+            </p>
+            <p>
+                MATERIA: <br>
+                Matemáticas Aplicadas a las Comunicaciones
+            </p>
+            <p>
+                DOCENTE RESPONSABLE: <br>
+                Saul Olaf Loaiza Meléndez
+            </p>
+            <p>
+                SEMESTRE: <br>
+                Tercero
+            </p>
+        </div>
+    </div>
+  
+    <!-- Menú de navegación central -->
+    <div class="menu">
+        <nav>
+            <h1>MENU</h1>
+            <button class="btn" onclick="location.href='#part1'">
+                <img src="images/intro.png" class="btn-image">
+                INTRODUCCIÓN
+            </button>
+            <button class="btn" onclick="location.href='#part2'">
+                <img src="images/marco.png" class="btn-image">
+                MARCO TEÓRICO
+            </button>
+            <button class="btn" onclick="location.href='#part3'">
+                <img src="images/problem.png" class="btn-image">
+                PROBLEMÁTICA
+            </button>
+            <button class="btn" onclick="location.href='#part4'">
+                <img src="images/resul.png" class="btn-image">
+                RESULTADOS
+            </button>
+            <button class="btn" onclick="location.href='#part5'">
+                <img src="images/conclu.png" class="btn-image">
+                CONCLUSIÓN
+            </button>
+            <button class="btn" onclick="location.href='#part6'">
+                <img src="images/ref.png" class="btn-image">
+                BIBLIOGRAFÍA
+            </button>
+        </nav>
+    </div>
+
+    <!-- Secciones de información -->
+    <div class="cuerpo">
+        <section id="part1">
+            <h2>INTRODUCCIÓN</h2>
+            <p>
+                <section>
+                        <img src="images/reso.png" width="300px" height="150px" align="right"> 
+                        El modelo masa-resorte es un sistema básico y muy útil en física e ingeniería para entender cómo funcionan las oscilaciones. Imaginemos una masa conectada a un resorte: si movemos esa masa desde su posición de equilibrio, el resorte se estira o se comprime, generando una fuerza que quiere devolverla a su lugar original. Esta fuerza es proporcional a cuánto se deformó el resorte, y siempre apunta en dirección opuesta al desplazamiento, creando así un movimiento de ida y vuelta alrededor de una posición central.
+                </section>
+                <br><br>
+                <section>
+                        <img src="images/demos.png" width="300px" height="150px" align="left">
+                        Para describir este comportamiento, se puede plantear una ecuación diferencial de segundo orden que nos dice cómo cambia la posición de la masa con el tiempo. Esta ecuación capta la esencia de las oscilaciones en el sistema y ayuda a analizar distintos escenarios, incluyendo los casos en que hay fricción o fuerzas externas que afectan el movimiento.
+                    </b>
+                </section>
+                <br>
+                <div align="center">
+                    El modelo masa-resorte no solo es útil como teoría; es también la base para entender la vibración de muchas cosas que nos rodean como:
+                <br><br>
+                <section>
+                    <table align="right">
+                        <tr>
+                            <th><img src="images/vi1.png" width="200px" height="80px"></th>
+                            <th><img src="images/vi2.png" width="200px" height="80px"></th> 
+                        </tr>
+                        <tr>
+                            <th><img src="images/vi3.png" width="200px" height="80px"></th>
+                            <th><img src="images/vi4.png" width="200px" height="80px"></th>
+                        </tr>
+                    </table>
+                    <ol><div align="left">
+                        <li>Edificios y rascacielos: los edificios están expuestos a movimientos del suelo que pueden causar oscilaciones.</li>
+                        <li>Puentes: pueden vibrar debido al viento, el paso de vehículos o incluso las pisadas de peatones.</li>
+                        <li>Amortiguadores de vehículos: funcionan como un sistema masa-resorte amortiguado.</li>
+                        <li>Instrumentos musicales: cuando se toca una cuerda, esta se comporta como una masa unida a un "resorte" virtual (su tensión), y oscila para producir el sonido que escuchamos.</li>
+                     </div></ol>
+                </section>
+                    En todos estos sistemas, hay partes que pueden moverse o vibrar en respuesta a diferentes fuerzas, y el comportamiento que siguen es muy parecido al de la masa que se mueve con un resorte.
+                </div>
+
+            </p> 
+        </section>
+        <section id="part2">
+            <h2>MARCO TEÓRICO</h2>
+            <p>
+                El modelo masa-resorte es una herramienta fundamental en física e ingeniería para analizar sistemas que presentan movimiento oscilatorio. Este modelo simplificado permite estudiar cómo una masa sujeta a un resorte se comporta al desplazarse de su posición de equilibrio debido a una fuerza restauradora, proporcionando así una descripción básica de las oscilaciones.
+                <h4>Ley de Hooke</h4>
+                <div>
+                     La ley de Hooke establece que la fuerza recuperadora es proporcional al desplazamiento, esto es, al alargamiento o elongación que experimenta el resorte respecto a la posición de equilibrio. Esto se cumple para deformaciones pequeñas, siempre que no se sobrepase el límite de elasticidad o límite elástico del resorte.
+                     <br>
+                     Por tanto, si F es la fuerza aplicada al resorte y x es el desplazamiento, la relación entre ambas cantidades se puede expresar como:
+                     <center>
+                         <img src="images/form.png" width="100px">
+                     </center>
+                    <section>
+                        <img src="images/hook1.png" align="right" height="130px" width="180px">
+                        donde k es la llamada constante elástica del resorte o constante del resorte, con dimensiones de fuerza por unidad de longitud. La fuerza recuperadora de un resorte cuando se estira una distancia x tendrá el mismo módulo que la fuerza en la ecuación , pero con sentido opuesto, lo que indica que la fuerza se opone al desplazamiento x.<br><br>
+                        Al colgar de un resorte pesas de masa creciente, el peso será igual a la fuerza recuperadora cuando el sistema alcance un estado de equilibrio. Si se miden los desplazamientos para diferentes masas se puede representar una gráfica F-x, cuyo resultado es una recta con pendiente igual a k.
+                        <br>
+                    </section>
+                </div>
+                <h4>Ecuacion Diferencial de Segundo orden</h4>
+                <div>
+                    El modelo masa-resorte se describe mediante una ecuación diferencial de segundo orden, que refleja cómo varía la posición de la masa en el tiempo. Usando la segunda ley de Newton, que establece que la fuerza es igual a la masa por la aceleración (F=ma), se puede formular la ecuación de movimiento para el sistema. Dado que la aceleración es la segunda derivada 
+                    de la posición respecto al tiempo, se obtiene:<br>
+                     
+                    <table align="center">
+                         <tr>
+                             <th><img src="images/ed1.png" width="120px"></th>
+                             <th><div class="te">o de otra forma:</div></th>
+                             <th><img src="images/ed2.png" align="left" width="120px"></th>
+                         </tr>
+                     </table><br>
+                    Esta ecuación es característica de un oscilador armónico simple y describe un movimiento oscilatorio alrededor de la posición de equilibrio. La solución de esta ecuación describe una oscilación sinusoidal cuya frecuencia natural depende de la masa m y de la constante del resorte k. 
+                </div>
+                <h4>Oscilador Armonico Simple y Frecuencia Natural</h4>
+                <div>
+                    El sistema masa-resorte es un ejemplo de oscilador armónico simple, en el cual la fuerza restauradora es directamente proporcional al desplazamiento. La frecuencia natural del sistema, que indica cuántas oscilaciones realiza la masa por segundo, se calcula como:
+                </div>
+                <center>
+                <img src="images/ed3.png">
+                </center>
+                <div>
+                    donde ω es la frecuencia angular del sistema. Este parámetro es crucial, ya que determina la rapidez de las oscilaciones y permite caracterizar el comportamiento dinámico del sistema.
+                </div>
+                <h4>Tipos de Sistemas Masa-Resorte: Amortiguador y Forzados</h4>
+                <div><img src="images/amor.png" align="left" width="250px">
+
+                    Existen variaciones del modelo masa-resorte básico que consideran fuerzas adicionales, como la resistencia del aire o la fricción, y fuerzas externas aplicadas. Los sistemas amortiguados, por ejemplo, incorporan una fuerza de amortiguamiento proporcional a la velocidad de la masa, que se opone al movimiento y reduce la amplitud de las oscilaciones con el tiempo.
+                    <img src="images/for.png" align="right" height="150px"><br>
+
+                <br>También existen sistemas forzados, en los cuales se aplica una fuerza externa periódica sobre la masa. Estos sistemas permiten estudiar fenómenos de resonancia, en los que la frecuencia de la fuerza externa coincide con la frecuencia natural del sistema, provocando un incremento en la amplitud de las oscilaciones.</div>
+
+                <h4>Aplicaciones del Modelo Masa-Resorte</h4>
+                <div>El modelo masa-resorte se utiliza ampliamente en diversas áreas para predecir y controlar las oscilaciones es crucial para analizar la respuesta de estructuras como puentes y edificios ante cargas dinámicas o terremotos. En la industria automotriz, los amortiguadores de los vehículos son sistemas masa-resorte amortiguados que ayudan a mejorar la estabilidad y confort. En dispositivos electrónicos, los cristales de cuarzo, que oscilan de manera controlada, funcionan de acuerdo con principios similares, siendo esenciales en relojes y equipos de comunicación.</div>
+            </p> 
+        </section>
+        <section id="part3" class="problematica">
+            <h2>PROBLEMÁTICA</h2>
+            <p>En la física y la ingeniería, como ya se ha mencionado anteriormente, el modelo masa-resorte se emplea para describir sistemas de oscilación donde una masa sujetada a un resorte, el cual, al estirarse o comprimirse, genera una fuerza restauradora proporcional a su deformación, lo que da lugar a oscilaciones alrededor de una posición de equilibrio
+            <br><br>
+                No obstante, el análisis de este sistema requiere la formulación de ecuaciones diferenciales (EDO) de segundo orden que describen con exactitud sus oscilaciones y el efecto de factores como la masa y la constante del resorte.
+            <br><br>
+                Para estudiar los desafíos de modelar y resolver problemas de este tipo, en este trabajo resolveremos 2 problemas del modelo masa resorte y su respectiva EDO de segundo orden:
+            </p>
+            
+            
+            <section class="problem">
+                <h3>1er Problema:</h3>
+                <p>Se cuelga un objeto de 15 kg de un resorte, y se observa un estiramiento de 61 cm hasta el punto de equilibrio.</p>
+                <p><strong>Incisos:</strong></p>
+                <ol type="a">
+                    <li>¿Cuál es la constante del resorte?</li>
+                    <li>Si se estira el objeto hasta 40 cm abajo del punto de equilibrio y se suelta, ¿Cuál es la posición del objeto 10 segundos después?</li>
+                    <li>¿Cuál es su velocidad en ese punto?</li>
+                </ol>
+                <p><strong>Problematicas principales:</strong></p>
+                <ul>
+                    <li>¿Cómo representamos gráficamente cada situación de cambio?</li>
+                    <li>¿Qué ley o fórmula utilizaremos para la constante?</li>
+                    <li>¿Cómo empleamos la fórmula de la fuerza externa en el sistema?</li>
+                    <li>¿Cómo interpretamos la gráfica de la onda sinusoidal producida por el resorte?</li>
+                </ul>
+            </section>
+            
+            <section class="problem">
+                <h3>2do Problema:</h3>
+                <p>Un resorte cuelga verticalmente; su extremo superior está fijo y del inferior pende una caja que pesa 196 N. Una vez en equilibrio, se tira de la caja hacia abajo haciéndola desplazar 0.25 m y se suelta. Sabiendo que k=80 N/m y que la resistencia del aire es de 4v.</p>
+                <p><strong>Preguntas:</strong></p>
+                <ol type="a">
+                    <li>Encontrar la ley de movimiento de la caja.</li>
+                    <li>Encontrar el tiempo necesario para que la caja se mueva desde la posición inicial hasta 0.0625 m por debajo de la posición de equilibrio.</li>
+                </ol>
+                <p><strong>Problematicas principales:</strong></p>
+                <ul>
+                    <li>¿Como influye la resistencia del aire en la ley del movimiento de la caja?</li>
+                    
+                </ul>
+            </section>
+        <section id="part4">
+            <h2>RESULTADOS</h2>
+</div>            
+<h3>EJERCICIO 1:</h3>
+            <img src="images/hoja.png" align="left" width="30px"><a href="EJERCICIO1PDF.pdf" download="Ejercio 1"><div class="tam">Descargar Ejercicio 1</div></a>
+            <br><br>
+<div class="tabdet">
+  <button class="tablinksdet" onclick="openCi(event, 'INCA')" id="defaultOpendet">INCISO A): </button>
+  <button class="tablinksdet" onclick="openCi(event, 'INCB')">INCISO B):</button>
+  <button class="tablinksdet" onclick="openCi(event, 'INCC')">INCISO C):</button>
+</div>
+
+<div id="INCA" class="tabcontentdet">
+  <h3>¿Cuál es la constante del resorte?</h3>
+  <p>Es necesario comenzar con el análisis del problema, así mismo el modelado de sus diversos diagramas, como se pueden ver a continuación:</p>
+  <div align="center">
+    <img src="images/resorte1.png" alt="Imagen 1.1: DIAGRAMA DE RESORTE EN REPOSO" class="gallery-image" onclick="openGallery(0, 'gallery1')">
+    <img src="images/reposo_mr1.png" alt="Imagen 1.2: DIAGRAMA DE MASA-RESORTE EN REPOSO" class="gallery-image" onclick="openGallery(1, 'gallery1')">
+    <img src="images/accion_mr1.png" alt="Imagen 1.3: DIAGRAMA DE MASA-RESORTE EN ACCIÓN" class="gallery-image" onclick="openGallery(2, 'gallery1')">
+</div>
+  <p> 
+    <h3>EXPLICACIÓN DE LOS DIAGRAMAS:</h3>
+    <ul>
+      <li> <b>DIAGRAMA 1: </b> 
+        Permite visualizar el estado de reposo
+        del resorte en cuestión, puesto que esté no está siendo 
+        estirado ni comprimido. La principal caracteristica en 
+        este diagrama es que la fuerza que se ejerce en el 
+        resorte es igual a cero, ya que no hay otras fuerzas 
+        actuando sobre él. Ademas, el resorte en este punto 
+        sigue con su longitud natural. 
+      </li>
+      <p><li> <b>DIAGRAMA 2: </b> 
+        Representa la integración de una masa 
+        al sistema del resorte anterior, en donde ambos componentes 
+        se encuentran en reposo. En este paso es esencial señalar la 
+        orientación de los signos, con respecto al eje X.
+      </li></p>
+      <p><li> <b>DIAGRAMA 3: </b>
+        A diferencia de los dos diagramas anteriores, este diagrama 
+        representa un sistema donde masa y resorte se encuentran
+        en acción.<br>
+        En el caso del resorte se puede ver como se estira o se comprime. Por lo que,
+        se puede mencionar que la gravedad (g) tiene un papel importante.
+      </li></p>
+    </ul>
+  </p>
+  <p> 
+    <h3>DATOS:</h3>
+    <p>
+      Segun la problematica anteriormente presentada, se pueden mencionar 
+      los siguientes valores:
+      <ul>
+        <li><b>MASA (m) =</b> 15 kg</li><br>
+        <li><b>ESTIRAMIENTO DEL RESORTE (l) =</b> 61 cm</li>
+      </ul>
+    </p>
+  </p>
+  <p> 
+    <h3>LEY/FORMULA</h3>
+    <h3>/TEOREMA:</h3>
+    <p>
+      Para poder realiza el calculo de la <b>CONSTANTE DEL 
+      RESORTE</b> es necesario la utilización de la:<br>
+      <h2>SEGUNDA LEY DE NEWTON</h2>
+      La cual menciona: 
+      <blockquote>
+        <i>“El cambio de movimiento es directamente proporcional
+        a la fuerza motriz impresa y ocurre según la línea recta 
+        a lo largo de la cual aquella fuerza se imprime”.</i>
+      </blockquote>
+      La formula de esta ley se representa como: <b>F = m ⋅ a</b><br>
+      Lo que al representarla para este tipo de ejercicios quedaria
+      de la siguiente forma:<br>
+      <h2>&Sigma;<span class="contenedorF">
+        <span class="flechaF">&rarr;</span>
+        <span>Fx</span>
+    </span> = m <span class="contenedorF">
+      <span class="flechaF">&rarr;</span>
+      <span>a</span><sub>x</sub> ...<i>(1)</i>
+  </span></h2>
+    </p>
+    Para poder calcular en este caso la <b>Fuerza
+    del resorte</b> se tendrá la expresión: <b><span class="contenedorF">
+      <span class="flechaF">&rarr;</span>
+      <span>Fx</span> = <span class="contenedorF">
+        <span class="flechaF">&rarr;</span>
+        <span>W</span></b> 
+  </p>
+  <p>
+    Una vez reescrito como una <i>ecuación
+    escalar</i>, donde se pasa de tener la representación de 
+    vectores a escalares, se tiene la formula por la cual se encontrará la <b>CONSTANTE
+    DEL RESORTE:</b><br>
+    <h2>
+      <b>
+          <span class="contenedorF">
+              <span class="flechaF">&rarr;</span>
+              <span>Fx</span> - 
+              <span class="contenedorF">
+                  <span class="flechaF">&rarr;</span>
+                  <span>Wx</span>
+              </span> = 0
+          </span>
+      </b>
+      ...<i>(2)</i>
+  </h2>  
+  </p>
+    <h3>SOLUCIÓN:</h3>
+    <p>
+      A partir de la <b>Expresión (2)</b> se representara la fórmula según 
+      los parametros que nos esta ofreciendo el ejercicio, por lo tanto será equivalente a:<br>
+      <h2>(lK) - (mg) = 0</h2>
+      <h4>DONDE:</h4>
+      <ul>
+        <li><b>l : ESTIRAMIENTO DEL RESORTE</b></li>
+        <li><b>K : CONSTANTE DEL RESORTE</b></li>
+        <li><b>m : MASA</b></li>
+        <li><b>g : CONSTANTE DE LA GRAVEDAD (9.81<sup>m</sup>&frasl;<sub>s<sup>2</sup></sub>)</b></li>
+      </ul>
+      Se <b>DESPEJARÁ K</b>, ya que esta representa la Constante del Resorte, quedando de 
+      la siguiente manera:<br>
+      <h2>K = <sup>mg</sup>&frasl;<sub>l</sub> 
+        &#8658; K = <sup>(15kg)(9.81<sup>m</sup>&frasl;<sub>s<sup>2</sup></sub>)</sup>
+        &frasl;<sub>0.61m</sub>
+        &#8658; K &#8776; 241.23 <sup>N</sup>&frasl;<sub>m</sub></h2>
+    </p>
+    <p> Por lo que se puede concluir que el <b>VALOR DE LA CONSTANTE DEL RESORTE</b>
+    es igual a: <span class="highlight"><b>K &#8776; 241.23 <sup>N</sup>&frasl;<sub>m</sub></h2></b></spam>
+    </div>
+
+<div id="INCB" class="tabcontentdet">
+  <h3>Si se estira el objeto hasta 40 cm abajo del punto de equilibrio y se suelta, ¿Cuál es la posición del objeto 10 segundos después?</h3>
+  <p>
+    Tomando en cuenta el resultado obtenido en el <b>INCISO A)</b> y el Diagrama 3, el cual se presenta nuevamente a continuación:
+    <br>
+    <img src="images/accion_mr1.png" alt="Descripción de la imagen" width="200px">
+    <br>
+    Se pueden contemplar los siguientes aspectos para llegar al
+    resultado solicitado.
+  </p> 
+  <p> 
+    <h3>DATOS:</h3>
+    <p>
+      Se enlistan los datos necesarios para el calculo:
+      <ul>
+        <li><b>MASA (m) =</b> 15 kg</li><br>
+        <li><b>CONSTANTE DEL RESORTE (K) =</b> 241.23 <sup>N</sup>&frasl;<sub>m</sub></h2></b></spam></li><br>
+        <li><b>CONDICIÓN INICIAL DE DESPLAZAMIENTO (X<sub>0</sub>=</b> 40cm</li>
+      </ul>
+    </p>
+    <p> 
+      <h3>MODELO MATÉMATICO:</h3>
+      <p>
+        <h2>mx<sup>"</sup>(t) + bx<sup>'</sup> + Kx = 0</h2>
+        Ya que <b>NO SE ESPECIFICA EL VALOR DE b</b>, la expresión a utilizar será la siguiente:
+        <h2>mx<sup>"</sup> + Kx = 0...<i>(1)</i></h2>
+        <h4>DONDE:</h4>
+        <ul>
+        <li><b>m : MASA</b></li>
+        <li><b>x<sup>"</sup> : SEGUNDA DERIVADA DEL DESPLAZAMIENTO</b></li>
+        <li><b>K : CONSTANTE DEL RESORTE</b></li>
+        <li><b>x : DESPLAZAMIENTO</b></li>
+        </ul>
+      </p>
+      <p>
+        <h3>SOLUCIÓN:</h3>
+        Para poder resolver son necesarias dos condiciones, puesto que se esta
+        trabajando con una <b>ECUACIÓN DE SEGUNDO ORDEN</b>, las cuales serán: <br>
+        <h2>x(0) = 0.40 m</h2>
+        Aunque el ejercicio no brinde el valor del equilibrio, se sabe que este será
+        equivalente a la primera derivada de la condición inicial, por lo que: <br>
+        <h2>x<sup>'</sup>(0) = 0 <sup>m</sup>&frasl;<sub>s</sub></h2>
+      </p>
+      <p>
+        El siguiente paso es sustituir en Expresión (1), teniendo asi la siguiente
+        ecuación auxiliar: <br>
+        <h2>15x<sup>"</sup> + 241.23x = 0...<i>(2a)</i></h2>
+        A partir de este paso se acaba el <i>análisis dimensional</i>. Se continua con el calculo llevando a cabo <b>TRANSFORMADA
+        DE LAPLACE</b> para la <i>ecuación auxiliar (2a)</i> : <br>
+        <ol>
+          <li> 
+            <b>ESCRITURA DE TRANSFORMADA DE LAPLACE: </b><br>
+            En este paso unicamente se lleva a cabo la sustitución de los valores
+            de <i>m</i> y <i>K</i>, dado sus valores correspondientes.
+            <br>
+            <h3>\( 15\mathcal{L} \{ x"\} \) + \( 241.23\mathcal{L} \{ x\} \) = 0 </h3>
+          </li>
+          <li> 
+            <b>EXPRESIÓN SEGÚN LA PROPIEDAD DE LA TRANSFORMADA DE LAPLACE</b><br>
+            Según la expresión para una ecuación de segundo orden, la cual es: <b>
+            \(\mathcal{L} \{ x"\} \) = s<sup>2</sup> X(s) - sx(0) - x<sup>'</sup>
+            </b><br>
+            Se coloca cada una de las partes según \(\mathcal{L} \{ \} \) : 
+            <br>
+            <h3>15[s<sup>2</sup> X(s) - sx(0) - x<sup>'</sup>] + 241.23 X(s) = 0</h3>
+          </li>
+          <li> 
+            <b>SUSTITUCIÓN DE POSICIÓN INICIAL: </b><br>
+            La estructura de la ecuación es similar a la anterior, pero
+            ahora se ha incorporado un valor específico para el efecto
+            inicial de la posición.
+            <br>
+            <h3>15[s<sup>2</sup> X(s) - 0.40s] + 241.23 X(s) = 0</h3>
+          </li>
+          <li> 
+            <b>MULTIPLICACIÓN DE CONSTANTE: </b><br>
+            Al multiplicar 15 por los valores que se encuentran
+            dentro de [], se obtiene una ecuación más simplificada.
+            A partir de esta, se podrá encontrar x(t), al hacer la <i>TRANSFORMADA
+              INVERSA DE LAPLACE</i>.
+            <br>
+            <h3>15s<sup>2</sup> X(s) - 6s + 241.23 X(s) = 0</h3>
+          </li>
+        </ol>
+        Posteriormente, es necesario el <b>DESPEJE DE X(s)</b> para poder transformar
+        la expresión a un <b>DOMINIO DE TIEMPO</b>: <br>
+        <ol>
+          <li>Ya que <b>X(s)</b> puede ser despejada en ambos factores, se tiene lo siguiente:<br>
+          <h3>X(s) (15s<sup>2</sup> + 241.23) = 6s</h3>
+          </li>
+          <li>Despeje final para X(s): <br>
+          <h3>X(s) = <sup>6s</sup>&frasl;<sub>15s<sup>2</sup> + 241.23</sub></h3>
+          </li>
+        </ol>
+        La siguiente parte del calculo del resultado que se busca obtener, es el realizar
+        la <b>TRANSFORMADA INVERSA</b>, la cual queda de la siguiente manera:
+        <ol>
+          <li>Se comienza despejando en la parte de <b>NUMERADOR</b> para s, por que 6 se pasa
+            del lado contrario a la Transformada Inversa. Ademas, en la parte del
+            <b>DENOMINADOR</b> se lleva a cabo el despeje de s con la constante 15, esto 
+            siendo posible a la división de 241.23 entre 15 para no afectar el valor
+            por ningun motivo.
+            <br>
+            <h3>\( \mathcal{L}^{-1} \{ X(s) \} = \)</h3>
+            <h3>\(6 \mathcal{L}^{-1} \left\{ \frac{s}{15 \left(s^2 + \frac{241.23}{15}\right)} \right\} \)</h3>
+
+          </li>
+          <li>
+            Teniendo la posibilidad de <b>DESPEJAR 15</b> se pasa del lado contrario a la 
+            Transformada Inversa:
+            <br>
+            <h4>x(t) = <sup>6</sup>&frasl;<sub>15</sub> \(\mathcal{L}^{-1} \left\{ \frac{s}{\left(s^2 + \frac{241.23}{15}\right)} \right\} \)</h4>
+          </li>
+          <li>
+            Para poder simplicar la expresión con ayuda de una <b>TABLA DE LAPLACE</b>, será
+            necesario el escribir la fracción que forma parte del denominador, de 
+            la siguiente manera:
+            <br>
+            <h4>x(t) = <sup>6</sup>&frasl;<sub>15</sub> \( \mathcal{L}^{-1} \left\{ \frac{s}{\left(s^2 + \left(\sqrt{\frac{241.23}{15}}\right)^2\right)} \right\} \)</h4>
+          </li>
+          <li>
+            Al aplicar la <b>TABLA DE LAPLACE</b> correspondiente, que en este
+            caso será <i>cos(Kt)</i>, el resultado es:
+            <br>
+            <h4>
+              <span class="highlight">
+                  <b>\( x(t)=\frac{6}{15} \cos \left( \sqrt{\frac{241.23}{15}} \right)t \)...<i>(3)</i></b>
+              </span>
+          </h4>
+          </li>
+        </ol>
+        Como ultimo paso, se tiene que <b>COLOCAR 10 COMO VALOR EN t</b> 
+        en la <i>Ecuación (3)</i> puesto que en ese tiempo esta es la posición que esta pidiendo el inciso, por lo que 
+        su calculo es: <br>
+          <ol>
+            <li>Se lleva a cabo la sustitución antes mencionada:
+              <br>
+              <h5>\( x(10) = \frac{6}{15} \cos \left( \sqrt{\frac{241.23}{15}} \cdot 10 \right) \)</h5>
+            </li>
+            <li>Se utilizo la herramienta calculadora para simplificar
+              el proceso, el resultado es el siguiente:
+              <br>
+              <h3>\(x(10) = \frac{2 \cos \left( \frac{\sqrt{40205}}{5} \right)}{5} \) 
+                &#8658; x(10) &#8776; -0.295 m
+              </h3>
+            </li>
+          </ol>
+      <p> Por lo que se puede concluir que la <b>POSICIÓN DEL OBJETO 10 SEGUNDO DESPUÉS DE ESTIRAR EL RESORTE</b>
+          es de: <span class="highlight"><b>x(10) &#8776; -0.295 m</spam></p>
+        <h3>GRÁFICA DE LA FUNCIÓN (3) UTILIZANDO GEOGEBRA: </h3>
+        <button class= "graf" onclick="loadGeoGebra('geogebra-container-1')">
+          <img src="images/geogebra.png" width="15" height="15" style="align-items: center ; margin-left: 2px;"alt="Icono1">
+          Cargar Gráfica</button>
+        <div id="geogebra-container-1" style="display: none;">
+          <iframe id="geogebra-frame-1" src="https://www.geogebra.org/calculator/tbeys23g" width="700" height="600" allowfullscreen style="border: 1px solid #e4e4e4; border-radius: 4px;" frameborder="0"></iframe>
+        </div>
+  </p>
+
+  <p> 
+</div>
+
+<div id="INCC" class="tabcontentdet">
+  <h3>¿Cuál es su velocidad en ese punto?</h3>
+  <p>
+    <h3>DATOS:</h3>
+    <p>
+    Del <b>INCISO B)</b>, es necesario recuperar la expresión resultante
+    para x(t), la cual es: <br>
+    </p>
+    <h3>\( x(t) = \frac{6}{15} \cos \left( \sqrt{\frac{241.23}{15}} \right) t \)...(3)</h3>
+  </p>
+  <p>
+    <h3>LEY/FORMULA</h3>
+    <h3>/TEOREMA:</h3>
+    <p>
+    Antes de comenzar el cálculo de este inciso, es necesario el análisis del
+    mismo; es así como se menciona que <b><i>la velocidad será el resultado de dividir 
+      la derivada de la posición sobre el tiempo</i></b>:<br>
+    </p>
+    <h3>\( v = \frac{d}{dt} (x(t)) = \frac{dx}{dt} \)</h3>
+    <p>
+    Además de esa fórmula, es indispensable la 
+    identificación de la <b>DERIVADA DE cos(Kt)</b>, la 
+    cual es: <b><i>-K sen(Kt)</i></b>.
+    </p>
+  </p>
+  <p>
+    <h3>SOLUCIÓN:</h3>
+      <ol>
+        <li><p>
+          Segun la formula de la derivada de cos(Kt), se
+          sustituye de la siguiente manera: 
+        </p>
+          <h5>
+            \[
+            \frac{dx}{dt} = -\frac{6}{15} \cdot \sin \cdot
+            \]
+          </h5>
+          <h5>
+            \[
+            \left(\sqrt{\frac{241.23}{15}} \cdot t\right) \cdot \sqrt{\frac{241.23}{15}}
+            \]
+          </h5>
+        </li>
+        <li><p>
+          Se evalua la derivada anterior en <b>t = 10 seg</b>, sustituyendo el valor de lo que esta dentro de la raiz cuadrada:
+        </p>
+        <h5> \[
+          v(10) = -\frac{6}{15} \cdot \sin \cdot
+          \]
+        </h5>
+        <h5> \[
+          \left(4.010 \cdot 10\right) \cdot 4.010
+          \]
+        </h5>
+        </li>
+        <li><p>
+          Calculo de ecuación, en este paso se llevan a cabo las diversas operaciones algebraicas para llevar al resultado de v(10):
+        </p>
+          <h5> \[
+            v(10) = -\frac{6}{15} \cdot \sin(40.1) \cdot 4.010
+            \]            
+          </h5>
+          <h5> \[
+            v(10) = -\frac{6}{15} \cdot 0.674 \cdot 4.010
+            \]
+          </h5>
+          <h5> \[
+            v(10) = -\frac{6}{15} \cdot 2,702
+            \]
+          </h5>
+          <h5> \[
+            v(10) = -\frac{1351}{1250} 
+            \] 
+          </h5>
+        </li>
+      </ol>
+      <p> Por lo que se puede concluir que la <b>VELOCIDAD EN EL PUNTO x(10) &#8776; -0.295 m</b>
+        es de: <span class="highlight"><b>v(10) &#8776; -1.080 <sup>m</sup>&frasl;<sub>s</sub></spam></p>
+      <h3>GRÁFICA VELOCIDAD-POSICIÓN UTILIZANDO GEOGEBRA: </h3>
+      <button class= "graf" onclick="loadGeoGebra('geogebra-container-2')">
+        <img src="images/geogebra.png" width="15" height="15" style="align-items: center ; margin-left: 2px;"alt="Icono1">
+        Cargar Gráfica</button>
+        <div id="geogebra-container-2" style="display: none;">
+          <iframe id="geogebra-frame-2" src="https://www.geogebra.org/calculator/t4tq7tnz" width="700" height="600" allowfullscreen style="border: 1px solid #e4e4e4; border-radius: 4px;" frameborder="0"></iframe>
+        </div>
+  </p>
+</div>
+
+
+<h3>EJERCICIO 2:</h3>
+<img src="images/hoja.png" align="left" width="30px"><a href="EJERCICIO2PDF.pdf" download="Ejercio 2"><div class="tam">Descargar Ejercicio 2</div></a>
+            <br><br>
+<div class="tabsas">
+  <button class="tablinkssas" onclick="openC(event, 'INCAsas')" id="defaultOpensas">INCISO A): </button>
+  <button class="tablinkssas" onclick="openC(event, 'INCBsas')">INCISO B):</button>
+</div>
+
+<div id="INCAsas" class="tabcontentsas">
+  <h3>Encontrar la ley de movimiento de la caja.</h3>
+  <p>Es necesario comenzar con el análisis del problema, así mismo el modelado de sus diversos diagramas, como se pueden ver a continuación:</p>
+  <div align="center">
+    <img src="images/resorte2.png" alt="Imagen 2.1: DIAGRAMA DE RESORTE EN REPOSO" class="gallery-image" onclick="openGallery(0, 'gallery2')">
+    <img src="images/reposo_mr2.png" alt="Imagen 2.2: DIAGRAMA DE MASA-RESORTE EN REPOSO" class="gallery-image" onclick="openGallery(1, 'gallery2')">
+    <img src="images/accion_mr2.png" alt="Imagen 2.3: DIAGRAMA DE MASA-RESORTE EN ACCIÓN" class="gallery-image" onclick="openGallery(2, 'gallery2')">
+</div>
+  <p> 
+    <h3>EXPLICACIÓN DE LOS DIAGRAMAS:</h3>
+    <ul>
+      <li> <b>DIAGRAMA 1: </b> 
+        Al igual que en el caso anterior, el primer diagrama 
+        permite visualizar el estado de reposo
+        del resorte en cuestión, puesto que esté no está siendo 
+        estirado ni comprimido. Donde la fuerza que se ejerce en el 
+        resorte es igual a cero y el resorte en este punto 
+        sigue con su longitud natural. 
+      </li>
+      <p><li> <b>DIAGRAMA 2: </b> 
+        Del mismo modo, el segundo diagrama representa la 
+        integración de una masa al sistema del resorte anterior, 
+        en donde ambos componentes se encuentran en reposo. 
+        En este paso es esencial señalar la 
+        orientación de los signos, con respecto al eje X.
+      </li></p>
+      <p><li> <b>DIAGRAMA 3: </b>
+        A diferencia de los dos diagramas anteriores, este diagrama 
+        representa un sistema donde masa y resorte se encuentran
+        en acción.<br>
+        En el caso del resorte se puede ver como se estira o se comprime. Por lo que,
+        se puede mencionar que la gravedad (g) tiene un papel importante.
+      </li></p>
+    </ul>
+  </p>
+  <p> 
+    <h3>DATOS:</h3>
+    <p>
+      Segun la problematica anteriormente presentada, se pueden mencionar 
+      los siguientes valores:
+      <ul>
+        <li><b>PESO DE LA CAJA (W)=</b> 196 N</li><br>
+        <li><b>ESTIRAMIENTO DEL RESORTE (x<sub>0</sub>) =</b> -0.25 m</li>
+        <p>El término se manejará como <b>NEGATIVO</b>, debido a la asignación
+          de valores en el eje x, con relación al <i>DIAGRAMA 3</i>.</p>
+        <li><b>CONSTANTE DEL RESORTE (K) =</b> 80 <sup>N</sup>&frasl;<sub>m</sub></li>
+        <li><b>RESISTENCIA DEL AIRE (f<sub>b</sub>) =</b> 4v</li>
+      </ul>
+    </p>
+    <p> 
+      <h3>MODELO MATÉMATICO:</h3>
+      <p>
+        A diferencia del ejercicio 1, en este
+        caso <b>SI SE ESPECIFICA EL VALOR 
+        DE b</b>, por lo que la expresión a utilizar
+        será la siguiente:</p>
+        <h2>mx<sup>"</sup>(t) + bx<sup>'</sup> + Kx = 0...<i>(1)</i></h2>
+        <h4>DONDE:</h4>
+        <ul>
+        <li><b>m : MASA DE LA CAJA</b></li>
+        <li><b>b: COEFICIENTE DE RESISTENCIA DEL AIRE</b></li>
+        <li><b>K : CONSTANTE DEL RESORTE</b></li>
+        <li><b>x : DESPLAZAMIENTO DESDE POSICIÓN DE EQUILIBRIO</b></li>
+        <li><b>x<sup>'</sup> : VELOCIDAD DE LA CAJA</b></li>
+        <li><b>x<sup>"</sup> : ACELERACIÓN DE LA CAJA</b></li>
+        </ul>
+      </p>
+      <p>
+        <h3>SOLUCIÓN:</h3>
+        <p>
+          Es necesario el <b>OBTENER LA MASA DE LA CAJA</b>
+          segun los valores anteriormente 
+          presentados, el cual será:
+        </p>
+        <h2>m = <sup>W</sup>&frasl;<sub>g</sub> = <sup>196 N</sup>&frasl;<sub>9.8</sub> = 20 Kg</h2>
+        <p>
+          Segun la <i>Ecuación (1)</i>, se sustituyen
+          los valores con los elementos, quedando de la
+          siguiente manera:
+        </p>
+        <h2>20x<sup>"</sup>+ 4x<sup>'</sup> + 80x = 0</h2>
+        <p>
+          Se divide la expresión anterior
+          entre 20, esto con la finalidad
+          de simplicarla:
+        </p>
+        <h2>x<sup>"</sup>+ 0.2x<sup>'</sup> + 4x = 0</h2>
+        <p>
+          Para poder resolver, se identifican las dos condiciones, puesto que se esta
+            trabajando con una <b>ECUACIÓN DE SEGUNDO ORDEN</b>, las cuales serán: </p>
+          <h2>x(0) = -0.25 m</h2>
+        <p>
+          Aunque el ejercicio no brinde el valor del equilibrio, se sabe que este será
+          equivalente a la primera derivada de la condición inicial, por lo que: </p>
+          <h2>x<sup>'</sup>(0) = 0 <sup>m</sup>&frasl;<sub>s</sub></h2>
+        <p>
+          En este punto se comienza con la <b>TRANSFORMADA DE LAPLACE</b>, la cual escrita
+          en primera instancia será igual a:
+        </p>
+        <h3>\( \mathcal{L}\{x''\} + 0.2 \mathcal{L}\{x'\} + 4 \mathcal{L}\{x\} \)</h3>
+        <p>
+          Posteriormente se aplicará la <b>PROPIEDAD DE TRANSFORMADA DE LAPLACE</b>, siendo asi lo siguiente:
+        </p>
+        <h2>s<sup>2</sup> X(s) - s (-0.25) + 0 + 0.2 (sX(s) + 0.25) + 4 X(s) = 0</h2>
+        <p>
+          Se agrupan los términos semejantes:
+        </p>
+        <h2>(s<sup>2</sup> + 0.2s + 4) X(s) = -0.25s - 0.05</h2>
+        <p>
+          Se lleva a cabo el despeje de X(s) para convertir expresión
+          a un <b>DOMINIO DE TIEMPO</b>, lo que corresponde a:
+        </p>
+        <h2>\( X(s) = \frac{-0.25s - 0.05}{s^2 + 0.2s + 4} \)</h2>
+        <p>
+          Por ultimo, se deberá realizar la <b>TRANSFORMADA INVERSA</b>, lo que escrito sería:
+        </p>
+        <h2>s<sup>2</sup> + 0.2s + 4</h2>
+        <p>Lo que refleja la expresión anterior es que corresponde a un <b>POLINOMIO CUADRÁTICO</b> por lo tanto, se aplicará
+          la <b>FÓRMULA GENERAL</b> para resolverla:
+        </p>
+        <h3>\[
+          s = \frac{-0.2 \pm \sqrt{(0.2)^2 - 4 \cdot 1 \cdot 4}}{2 \cdot 1}
+          \]</h3>
+        <p>Lo que al simplificar, queda de la siguiente
+          manera:</p>
+        <h2>\[s = \frac{-0.2 \pm \sqrt{0.04 - 16}}{2}\]</h2>
+        <h2>\[s = \frac{-0.2 \pm \sqrt{-15.96}}{2}\]</h2>
+        <p>
+          Dadas las reglas para poder <b>INTERPRETAR
+          AL DISCRIMINANTE</b>, las cuales son:
+          <ul>
+            <li><b>D > 0 :</b> La ecuación tiene 2 raíces reales distintas.</li>
+            <li><b>D = 0 :</b> La ecuación tiene una raíz real doble.</li>
+            <li><b>D < 0 : LA ECUACIÓN TIENE DOS RAICES COMPLEJAS CONJUGADAS.</li>
+          </ul>
+        </p>
+        <p>
+          Se puede ver que el discriminante de este
+          ejercicio es igual a <b>-15.96</b>, por lo que se cumple la 
+          tercer regla.
+        </p>
+        <p>Con el fin de acelerar el proceso de 
+          calculo, se utiliza la herramienta de calculadora 
+          para llegar al resultado de la <b>FÓRMULA GENERAL</b>
+          , quedando de la siguiente manera:
+        </p>
+        <h2>\[s = -0.1 \pm 2i\]</h2>
+        <p>Esto nos indica lo siguiente:</p>
+        <p><b>PARTE REAL: -0.1</b> lo que
+        este sistema tiene un amortiguamiento donde la
+        amplitud de las oscilaciones decrecerá con el tiempo.</p>
+        <p><b>PARTE IMAGINARIA: 2</b> representa la frecuencia angular
+        de las oscilaciones del sistema, el cual refleja
+        oscilación con relación a la posición del equilibrio, por ser de 2 <sup>rad</sup>&frasl;<sub>s</sub>
+        (oscilaciones relativamente rápidas).</p>
+        <p>
+          Es necesario conocer la formula de la solución
+          general con raíces complejas, la cual es:
+          <h2>x(t) = e<sup>-αt</sup>(A cos (βt) + B sin(βt))</h2>
+          <p>
+            <h3>DONDE:</h3>
+            <ul>
+              <li><b>A y B:</b> Constantes
+              determinadas a partir de condiciones iniciales.</li>
+              <li><b>α :</b> Representa el amortiguamiento.</li>
+              <li><b>β :</b> Representa frecuencia de oscilación.</li>
+            </ul>
+          </p>
+          <p>
+            Sustituyendo los valores que se tienen en la fórmula anterior, se tiene:
+          </p>
+          <h2>x(t) = e<sup>-0.1t</sup>(A cos (2t) + B sin(2t))...<i>(2)</i></h2>
+        </p>
+      <p>Para el valor de <b>A</b> se tendrá que: </p>
+      <h2>A = -0.25 </h2>
+      <p>Para el valor de <b>B</b> se tendrá que: </p>
+      <h2>-0.1(-0.25) + 2B = 0 </h2>
+      <h2>0.025 + 2B = 0</h2>
+      <h2>B = 0.0125</h2>
+      <p>Por lo que se puede concluir a la hora de sustituir
+        el valor calculado en la Fórmula (2), que la <b>LEY DE MOVIMIENTO DE LA CAJA</b>
+          es igual a: 
+      </p>
+      <h3>
+        <span class="highlight">
+          <b>x(t) = e<sup>-0.1t</sup>(-0.25 cos (2t) + 0.0125 sin(2t))...<i>(3)</i></b>
+        </span>
+
+        <span class="highlight">
+          <b>x(t) = e<sup>-0.1t</sup>(C<sub>1</sub> cos (1.9975t) + C<sub>2</sub>sin(1.9975t))...<i>(3)</i></b>
+        </span>
+        <h3>GRÁFICA DE LA FUNCIÓN (3) UTILIZANDO GEOGEBRA: </h3>
+        <button class= "graf" onclick="loadGeoGebra('geogebra-container-3')">
+          <img src="images/geogebra.png" width="15" height="15" style="align-items: center ; margin-left: 2px;"alt="Icono1">
+          Cargar Gráfica</button>
+        <div id="geogebra-container-3" style="display: none;">
+          <iframe id="geogebra-frame-3" src="https://www.geogebra.org/calculator/hnfgfssp" width="700" height="600" allowfullscreen style="border: 1px solid #e4e4e4; border-radius: 4px;" frameborder="0"></iframe>
+        </div>
+  </p>
+  </p>
+</div>
+
+<div id="INCBsas" class="tabcontentsas">
+  <h3>Encontrar el tiempo necesario para que la caja se mueva desde la posición inicial hasta 0.0625m por debajo de la posición de equilibrio.</h3>
+  <h3>DATOS: </h3>
+    <ul>
+      <li><b>PESO DE LA CAJA (W) : </b>196 N</li>
+      <li><b>CONSTANTE DEL RESORTE (K) :</b>80 <sup>N</sup>&frasl;<sub>m</sub></li>
+      <li><b>POSICIÓN DE EQUILIBRIO : </b>0</li>
+      <li><b>POSICIÓN DESEADA : </b>-0.0625m (por debajo de su posición de equilibrio)</li>
+      <li><b>RESISTENCIA DEL AIRE: </b>4v</li>
+    </ul>
+  </p> 
+  <p>
+    <h3>LEY/FÓRMULA </h3>
+    <h3>/TEOREMA:</h3>
+    <p>Se recupera del <i>INCISO B)</i> la <b>LEY DE MOVIMIENTO DE LA CAJA</b>, la cual es: </p>
+    <b>x(t) = e<sup>-0.1t</sup>(-0.25 cos (2t) + 0.0125 sin(2t))...<i>(3)</i></b>
+  </p>
+  <p>
+    <h3>SOLUCIÓN: </h3>
+    Se establece la ecuación que se esta resolviendo y el resultado al que se desea llegar, la cual es:
+  </p>
+  <h2>x(t) = e<sup>-0.1t</sup>(-0.25 cos (2t) + 0.0125 sin(2t)) = -0.0625</h2>
+  <p>
+    Se multiplican ambos lados de la ecuación por e<sup>-0.1t</sup>, con el objetivo de eliminar el factor exponencial:
+  </p>
+  <h2>-0.25 cos(2t) + 0.0125 sin (2t) = -0.0625 e<sup>0.1t</sup></h2>
+  <p>
+    Se reorganiza la expresión para que su resultado sea 0, asi continuar con los calculos, lo que se ve de la siguiente manera:
+  </p>
+  <h2>-0.25 cos(2t) + 0.0125 sin(2t) + 0.0625 e<sup>0.1t</sup> = 0</h2>
+  <p>
+    Para encontrar el valor de t, como es un procedimiento complejo, se recurrio a la implementación
+    de un codigó en lenguaje Python para facilitar la tarea, el cual se puede ver a continuación:
+  </p>
+  <script async src="https://www.mycompiler.io/static/js/embedv2.js#id:L12HucFcn73"></script>
+  <p> Por lo que se puede concluir que el <b>VALOR DEL TIEMPO SOLICITADO</b>
+    es equivalente a: <span class="highlight"><b>t &#8776; 0.6259 segundos</spam></p>
+</div>
+
+<!-- Lightbox Modal (Only One Lightbox for All Galleries) -->
+<div id="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+  <img id="lightbox-img" src="" alt="Lightbox Image" style="max-width: 90%; max-height: 90%;">
+  <span onclick="closeGallery()" style="position: absolute; top: 10px; right: 10px; color: white; font-size: 24px; cursor: pointer;">&times;</span>
+</div>
+<script>
+function openCi(evt, Nam) {
+  var i, tabcontentdet, tablinksdet;
+  tabcontentdet = document.getElementsByClassName("tabcontentdet");
+  for (i = 0; i < tabcontentdet.length; i++) {
+    tabcontentdet[i].style.display = "none";
+  }
+  tablinksdet = document.getElementsByClassName("tablinksdet");
+  for (i = 0; i < tablinksdet.length; i++) {
+    tablinksdet[i].className = tablinksdet[i].className.replace(" active", "");
+  }
+  document.getElementById(Nam).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function openC(evt, Name) {
+  var i, tabcontentsas, tablinkssas;
+  tabcontentsas = document.getElementsByClassName("tabcontentsas");
+  for (i = 0; i < tabcontentsas.length; i++) {
+    tabcontentsas[i].style.display = "none";
+  }
+  tablinkssas = document.getElementsByClassName("tablinkssas");
+  for (i = 0; i < tablinkssas.length; i++) {
+    tablinkssas[i].className = tablinkssas[i].className.replace(" active", "");
+  }
+  document.getElementById(Name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpendet").click();
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpensas").click();
+
+let currentImageIndex = 0;
+const galleries = {
+    gallery1: [
+        'resorte1.png',
+        'reposo_mr1.png',
+        'accion_mr1.png'
+    ],
+    gallery2: [
+        'resorte2.png',
+        'reposo_mr2.png',
+        'accion_mr2.png'
+    ]
+};
+
+function openGallery(index, galleryId) {
+    currentImageIndex = index;
+    const images = galleries[galleryId];
+    document.getElementById('lightbox-img').src = images[currentImageIndex];
+    document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeGallery() {
+    document.getElementById('lightbox').style.display = 'none';
+}
+
+
+function loadGeoGebra(containerId) {
+        // Muestra el contenedor específico de la gráfica basado en el ID proporcionado
+        document.getElementById(containerId).style.display = "block";
+    }
+</script>   
+        </section>
+<div class="cuerpo">
+        <section id="part5">
+            <h2>CONCLUSIÓN</h2>
+            <p class="tera">
+            A través de este proyecto, hemos profundizado en el estudio de las ecuaciones diferenciales ordinarias de segundo orden, encontrando en el modelo masa-resorte un modelo completo 
+            para comprender una amplia gama de fenómenos vibratorios.<br><br>
+            Uno de los aspectos más sorprendentes es el concepto de oscilación sin fricción (del primer ejercicio), es una idea que nos permite estudiar oscilaciones ideales sin que intervengan fuerzas de resistencia. Esto facilita la exploración teórica y nos da una base para entender cómo se comportan los sistemas reales cuando las fuerzas de fricción son muy bajas. <br><br>
+            Además, por la "frecuencia natural" de un sistema, hemos observado que una oscilación a esta frecuencia puede incrementar las amplitudes de forma significativa, un fenómeno llamado resonancia que ocurre en estructuras como puentes o edificios y que puede llevar al colapso si no se diseñan para soportar estas condicion.<br><br>
+            Al resolver diversos problemas y analizar las soluciones obtenidas, hemos desarrollado habilidades en la resolución de ecuaciones diferenciales y en la interpretación de resultados.
+            La capacidad de modelar sistemas físicos complejos mediante ecuaciones diferenciales nos ha permitido comprender mejor las matemáticas en la vida cotidiana. <br><br>
+            El modelo masa-resorte, en particular, ha servido como un puente entre la teoría y la práctica,
+            ayudandonos visualizar y cuantificar conceptos como el amortiguamiento y las masas.<br><br>
+            Los conocimientos adquiridos en este proyecto tienen aplicaciones directas en diversas áreas de la ingeniería y la física, desde el diseño de estructuras que resistan eventos físicos (como sismos) hasta el desarrollo de sistemas de control. Además, hemos adquirido una base sólida para abordar problemas más complejos de ecuaciones diferenciales ordinarias.
+              
+            </p>
+        </section>
+        <section id="part6">
+            <h2>BIBLIOGRAFÍA</h2>
+            <p>
+                <ul class="ter">
+                    <li>phi. (n.d.). Uhu.Es. Retrieved November 2, 2024, from</li> https://www.uhu.es/gem/docencia/fisica-ccqq/practicas/1/1_pagina1.php
+                    <li>Ecuaciones Diferenciales de Segundo Orden. (n.d.). Disfrutalasmatematicas.com. Retrieved November 2, 2024, from</li> https://www.disfrutalasmatematicas.com<br>/calculo/ecuaciones-diferenciales-segundo-orden.html
+                    <li>Sánchez-Ortiga,
+                    Emilio; Ferrando, Vicente. (2023). Ecuaciones diferenciales en Física.</li>
+                    Valencia: Escuela Técnica Superior de Ingeniería del Diseño.
+                    <li>Ecuaciones diferenciales aplicadas en la Física — Steemit. (s. f.). Steemit.</li>
+                    https://steemit.com/stem-espanol/@chetoblackmetal/ecuaciones-diferenciales-aplicadas-en-la-fisica
+                    <li>Moebs, W., Ling, S. J., & Sanny, J. (2021, November 17). 7.5 El oscilador armónico cuántico. Física universitaria volumen 3; OpenStax</li> https://openstax.org/books/f%C3%ADsica-universitaria-volumen-3/pages/7-5-el-oscilador-armonico-cuantico
+                </ul>
+            </p> 
+        </section>
+    </div>
+</div>
+    <!-- Enlace al script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
